@@ -50,7 +50,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 with firefly_iii_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = categories_api.CategoriesApi(api_client)
-    id = 1 # int | The ID of the category.
+    id = "123" # str | The ID of the category.
 
     # example passing only required values which don't have defaults set
     try:
@@ -65,7 +65,7 @@ with firefly_iii_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| The ID of the category. |
+ **id** | **str**| The ID of the category. |
 
 ### Return type
 
@@ -128,7 +128,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 with firefly_iii_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = categories_api.CategoriesApi(api_client)
-    id = 1 # int | The ID of the category.
+    id = "123" # str | The ID of the category.
     start = dateutil_parser('Mon Sep 17 00:00:00 UTC 2018').date() # date | A date formatted YYYY-MM-DD, to show spent and earned info.  (optional)
     end = dateutil_parser('Mon Dec 31 00:00:00 UTC 2018').date() # date | A date formatted YYYY-MM-DD, to show spent and earned info.  (optional)
 
@@ -155,7 +155,7 @@ with firefly_iii_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| The ID of the category. |
+ **id** | **str**| The ID of the category. |
  **start** | **date**| A date formatted YYYY-MM-DD, to show spent and earned info.  | [optional]
  **end** | **date**| A date formatted YYYY-MM-DD, to show spent and earned info.  | [optional]
 
@@ -220,7 +220,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 with firefly_iii_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = categories_api.CategoriesApi(api_client)
-    id = 1 # int | The ID of the category.
+    id = "123" # str | The ID of the category.
     page = 1 # int | Page number. The default pagination is 50. (optional)
 
     # example passing only required values which don't have defaults set
@@ -246,7 +246,7 @@ with firefly_iii_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| The ID of the category. |
+ **id** | **str**| The ID of the category. |
  **page** | **int**| Page number. The default pagination is 50. | [optional]
 
 ### Return type
@@ -390,7 +390,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 with firefly_iii_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = categories_api.CategoriesApi(api_client)
-    id = 1 # int | The ID of the category.
+    id = "123" # str | The ID of the category.
     page = 1 # int | Page number. The default pagination is per 50. (optional)
     start = dateutil_parser('Mon Sep 17 00:00:00 UTC 2018').date() # date | A date formatted YYYY-MM-DD, to limit the result list.  (optional)
     end = dateutil_parser('Mon Dec 31 00:00:00 UTC 2018').date() # date | A date formatted YYYY-MM-DD, to limit the result list.  (optional)
@@ -419,7 +419,7 @@ with firefly_iii_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| The ID of the category. |
+ **id** | **str**| The ID of the category. |
  **page** | **int**| Page number. The default pagination is per 50. | [optional]
  **start** | **date**| A date formatted YYYY-MM-DD, to limit the result list.  | [optional]
  **end** | **date**| A date formatted YYYY-MM-DD, to limit the result list.  | [optional]
@@ -571,7 +571,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 with firefly_iii_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = categories_api.CategoriesApi(api_client)
-    id = 1 # int | The ID of the category.
+    id = "123" # str | The ID of the category.
     category_update = CategoryUpdate(
         name="Lunch",
         notes="Some example notes",
@@ -591,7 +591,7 @@ with firefly_iii_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| The ID of the category. |
+ **id** | **str**| The ID of the category. |
  **category_update** | [**CategoryUpdate**](CategoryUpdate.md)| JSON array with updated category information. See the model for the exact specifications. |
 
 ### Return type
