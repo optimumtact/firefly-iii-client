@@ -84,7 +84,7 @@ class PageLink(ModelNormal):
         return {
             'first': (str,),  # noqa: E501
             'last': (str,),  # noqa: E501
-            '_self': (str,),  # noqa: E501
+            'self': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -95,7 +95,7 @@ class PageLink(ModelNormal):
     attribute_map = {
         'first': 'first',  # noqa: E501
         'last': 'last',  # noqa: E501
-        '_self': 'self',  # noqa: E501
+        'self': 'self',  # noqa: E501
     }
 
     read_only_vars = {
@@ -141,7 +141,7 @@ class PageLink(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             first (str): [optional]  # noqa: E501
             last (str): [optional]  # noqa: E501
-            _self (str): [optional]  # noqa: E501
+            self (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -225,7 +225,7 @@ class PageLink(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             first (str): [optional]  # noqa: E501
             last (str): [optional]  # noqa: E501
-            _self (str): [optional]  # noqa: E501
+            self (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
